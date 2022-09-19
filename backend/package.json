@@ -43,6 +43,7 @@
     "deepmerge": "^4.2.2",
     "detect-newline": "^3.1.0",
     "diff-sequences": "^29.0.0",
+    "dotenv": "^16.0.2",
     "electron-to-chromium": "^1.4.249",
     "emittery": "^0.10.2",
     "emoji-regex": "^8.0.0",
@@ -202,11 +203,13 @@
     "yocto-queue": "^0.1.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.14",
     "@types/jest": "^29.0.2",
     "ts-jest": "^29.0.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
